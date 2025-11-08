@@ -15,6 +15,9 @@
           <li class="nav-item">
             <router-link to="/team" class="nav-link">The Team</router-link>
           </li>
+          <li class="nav-item">
+            <router-link to="/product" class="nav-link">Our Product</router-link>
+          </li>
           <!-- Replaced Ecosystem dropdown with About Us link -->
           <li class="nav-item">
             <router-link to="/about" class="nav-link">About Us</router-link>
@@ -76,6 +79,7 @@
     <div v-if="showMobileNav" class="mobile-menu" @click.self="showMobileNav = false">
       <ul class="mobile-list">
         <li><router-link to="/team" @click="closeMobileNav">The Team</router-link></li>
+        <li><router-link to="/product" @click="closeMobileNav">Our Product</router-link></li>
         <li><router-link to="/about" @click="closeMobileNav">About Us</router-link></li>
         <li><router-link to="/feed" @click="closeMobileNav">Social Feed</router-link></li>
         <li v-if="route.name === 'Community'"><router-link to="/challenges" @click="closeMobileNav">Challenges</router-link></li>

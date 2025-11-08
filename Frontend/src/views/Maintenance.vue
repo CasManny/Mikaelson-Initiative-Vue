@@ -34,6 +34,10 @@
                 <i class="fas fa-home"></i>
                 <span>Return to Homepage</span>
               </router-link>
+              <router-link to="/social-feed" class="feed-button" style="margin-top: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                <i class="fas fa-rss"></i>
+                <span>Go to Social Feed</span>
+              </router-link>
             </div>
           </div>
         </div>

@@ -46,16 +46,16 @@
             <div class="nav-section-title">Social</div>
             <ul class="nav-list">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <router-link :to="{ name: 'Community' }" class="nav-link">
                   <i class="fas fa-users nav-icon"></i>
                   <span>Community</span>
-                </a>
+                </router-link>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <router-link :to="{ name: 'Community', hash: '#leaderboard' }" class="nav-link">
                   <i class="fas fa-trophy nav-icon"></i>
                   <span>Leaderboard</span>
-                </a>
+                </router-link>
               </li>
               <li class="nav-item">
                 <router-link to="/challenges" class="nav-link">

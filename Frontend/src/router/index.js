@@ -7,6 +7,9 @@ const Sponsor = () => import('../views/Sponsor.vue')
 const Labs = () => import('../views/Labs.vue')
 const Volunteer = () => import('../views/Volunteer.vue')
 const Team = () => import('../views/Team.vue')
+const Rio = () => import('../views/Rio.vue')
+const Product = () => import('../views/Product.vue')
+const ProductDetail = () => import('../views/ProductDetail.vue')
 const Partnership = () => import('../views/Partnership.vue')
 
 // Auth / user related (stored under stores/views per current structure)
@@ -29,6 +32,7 @@ const ChallengesFeed = () => import('../views/ChallengesFeed.vue')
 const SocialFeed = () => import('../views/SocialFeed.vue')
 const Maintenance = () => import('../views/Maintenance.vue')
 const ChapterDetail = () => import('../views/ChapterDetail.vue')
+const Leaderboard = () => import('../views/Leaderboard.vue')
 
 const routes = [
   { path: '/', name: 'Home', component: () => import('../views/Home.vue') },
@@ -48,12 +52,16 @@ const routes = [
   { path: '/sponsor', name: 'Sponsor', component: Sponsor },
   { path: '/volunteer', name: 'Volunteer', component: Volunteer },
   { path: '/team', name: 'Team', component: Team },
+  { path: '/rio', name: 'Rio', component: Rio },
+  { path: '/product', name: 'Product', component: Product },
+  { path: '/product/:id', name: 'ProductDetail', component: ProductDetail, props: true },
   { path: '/code-of-conduct', name: 'CodeOfConduct', component: CodeOfConduct },
   { path: '/help', name: 'HelpCenter', component: HelpCenter },
   { path: '/success-stories', name: 'SuccessStories', component: SuccessStories },
   { path: '/challenges', name: 'ChallengesFeed', component: ChallengesFeed },
-  { path: '/feed', name: 'SocialFeed', component: SocialFeed },
+  { path: '/feed', name: 'MaintenanceFeed', component: Maintenance },
   { path: '/community/chapter/:id', name: 'ChapterDetail', component: ChapterDetail, props: true },
+  { path: '/leaderboard', name: 'Leaderboard', component: Leaderboard },
   { path: '/:pathMatch(.*)*', redirect: '/' }
 ]
 

@@ -178,7 +178,7 @@
         <div class="container">
           <div class="section-header">
             <h2 class="section-title">Community Leaderboard</h2>
-            <router-link to="/community" class="view-all-link">
+            <router-link :to="{ name: 'Community', hash: '#leaderboard' }" class="view-all-link">
               View Full Leaderboard
               <i class="fas fa-arrow-right"></i>
             </router-link>
